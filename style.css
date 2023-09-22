@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   overflow: hidden;
+
+}
+
+.dragonFire{
+    background-image: url(./assets/sky_1.png);
+    background-size: 230vh 30vw;
+    width: 100vw;
+    height: 100vh; 
+    
+}
+
+.road{
+    background-image: url(./assets/road.jpg);
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 105px;
+
+    animation-name: road;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+
+}
+
+@keyframes road {
+    100%{
+        transform: translateX(-450px);
+    }
+    
+}
+
+.city{
+    background-image: url(./assets/city1.png);
+    position: absolute;
+    bottom: 10px;
+    width: 120%;
+    height: 80%;
+
+    animation-name: city;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes city {
+    100%{
+        transform: translateX(-200px);
+    }
+    
+}
+
+.dragon{
+    position: absolute;
+    top: 40px;
+
+    animation-name: dragon;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes dragon{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+    
+        transform: translate(400px,-150px);
+
+    }
+    75%{
+        
+        transform: translate(600px,-50px);
+    }
+   
+    100%{
+        transform: translate(800px,100px);
+    }
+
+    
+}
+
+
+
+
+.dragon img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.car{
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+
+}
+
+.car img{
+    width: 400px;
+    height: 200px;
+
+    animation-name: car;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes car{
+
+    from{
+        transform: translateY(0px);
+
+    }
+    to{
+         transform: translateY(8px);
+    }
+    
+}
+    
+
+.wheel{
+    position: absolute;
+    bottom: 95px;
+    left: 30%;
+    
+}
+.wheel img{
+    width: 60px;
+    height: 60px;
+
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wheel {
+    100%{
+        transform: translateX(2px) rotate(360deg);
+    }
+    
+}
+
+
+.tyre1{
+    position: absolute;
+    left: 240px;
+    bottom: 0;
+   
+}
+
+.tyre2{
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    
+    
+
+}
